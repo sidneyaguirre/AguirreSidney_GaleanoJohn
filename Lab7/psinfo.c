@@ -6,44 +6,45 @@
 
 void logText(char *file)
 {
-    char line[201];
-    int numLinea = 1;
-    FILE *iF;
-    iF = fopen(file, "r");
-    if (iF == NULL)
-    {
-        printf("Error al abrir el archivo \n");
-        exit(-1);
-    }
-    while (fgets(line, 201, iF) != NULL)
-    {
-        printf("%-5d", numLinea++);
-        printf("%s", line);
-    }
-    fclose(iF);
-    exit(0);
-}
-
-/*
-int main() {
-  char filename[80];
   char line[201];
-  int numLinea = 1;
+  int numLinea = 0;
   FILE *iF;
-  printf("Ingrese el nombre del archivo: ");
-  fflush(stdin);
-  scanf("%[^\n]s",filename); // Formato para que la entrada pueda aceptar espacios
-  iF = fopen(filename,"r");
-  if (iF == NULL) {
-    printf("Error al abrir el archivo %s\n", filename);
+  iF = fopen(file, "r");
+  if (iF == NULL)
+  {
+    printf("Error al abrir el archivo \n");
     exit(-1);
   }
-  while(fgets(line, 201, iF)!=NULL) {
-    printf("%-5d",numLinea++);
-    printf("%s",line);
+  while (fgets(line, 201, iF) != NULL)
+  {
+    numLinea++;
+    /* printf("%-5d", numLinea++);
+    printf("%s", line); */
+
+    switch(numLinea){
+      case 1:
+        printf("%s", line);
+      break;
+      case 3:
+        printf("%s", line);
+      break;
+      case 26:
+        printf("%s", line);
+      break;
+      case 27:
+        printf("%s", line);
+      break;
+      case 28:
+        printf("%s", line);
+      break;
+      case 54:
+        printf("%s", line);
+      break;
+      case 55:
+        printf("%s", line);
+      break;
+    }
   }
   fclose(iF);
   exit(0);
 }
-
-*/
