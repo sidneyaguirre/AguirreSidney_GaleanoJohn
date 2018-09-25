@@ -4,7 +4,7 @@
 #include <string.h>
 #include <math.h>
 
-void logText(char *file)
+void logStatus(char *file)
 {
   char line[201];
   int numLinea = 0;
@@ -18,8 +18,6 @@ void logText(char *file)
   while (fgets(line, 201, iF) != NULL)
   {
     numLinea++;
-    /* printf("%-5d", numLinea++);
-    printf("%s", line); */
 
     switch(numLinea){
       case 1:

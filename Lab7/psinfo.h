@@ -7,6 +7,6 @@
 #include <string.h>
 #include <math.h>
 
-void logText(char *file);
+void logStatus(char *file);
 
 #endif
