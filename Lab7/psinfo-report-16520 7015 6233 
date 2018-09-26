@@ -1,8 +1,0 @@
-Name:	bash
-State:	S (sleeping)
-VmPeak:	   29820 kB
-VmData:	    1688 kB
-VmStk:	     132 kB
-VmExe:	    1040 kB
-voluntary_ctxt_switches:	1024
-nonvoluntary_ctxt_switches:	15
