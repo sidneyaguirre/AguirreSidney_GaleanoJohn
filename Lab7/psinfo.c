@@ -101,7 +101,6 @@ void logReport(char *file)
   status.pid = (char *)malloc(strlen(ps));
   strcpy(status.pid, ps);
   free(status.pid);
-  char ingresa[50];
   while (fgets(line, 201, iF) != NULL)
   {
     numLinea++;

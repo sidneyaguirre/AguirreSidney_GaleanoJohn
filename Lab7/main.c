@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
         switch (option)
         {
         case 108:
+            printf("-- Información recolectada!!!\n");
             k = 2;
             while (k < argc)
             {
