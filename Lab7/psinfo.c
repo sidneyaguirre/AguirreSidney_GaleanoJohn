@@ -89,7 +89,7 @@ void logReport(char *file)
   char name[80] = "psinfo-report-";
   strcat(name, pids);
   iF = fopen(file, "r");
-  oF = fopen(name, "w");  
+  oF = fopen(name, "a+");  
   if (iF == NULL)
   {
     printf("Error al abrir el archivo \n");
@@ -153,6 +153,7 @@ void logReport(char *file)
       strcpy(status.nonVoluntarySw, line);
       fputs(status.nonVoluntarySw, oF);
       free(status.nonVoluntarySw);
+      fputs("----------------------------------------------------------\n",oF);
       break;
     }
   }

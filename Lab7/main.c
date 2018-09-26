@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
                 char *ar = argv[k];
                 pid = argv[k];
                 getStatus(ar);
+                printf("----------------------------------------------------------\n");
                 k++;
             }
             break;
