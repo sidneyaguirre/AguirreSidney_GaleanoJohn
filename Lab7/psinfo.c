@@ -24,7 +24,6 @@ void logStatus(char *file)
   while (fgets(line, 201, iF) != NULL)
   {
     numLinea++;
-<<<<<<< HEAD
     switch (numLinea)
     {
     case 1:
@@ -80,8 +79,6 @@ void logStatus(char *file)
   fclose(iF);
   //exit(0);
 }
-=======
->>>>>>> 58ed317b19631b6537377b449bfe2f4c0e442030
 
 void logReport(char *file)
 {
